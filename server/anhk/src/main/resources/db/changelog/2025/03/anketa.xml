@@ -1,0 +1,712 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                   https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+
+    <changeSet id="1740817649585-27" author="evilfly0">
+        <!-- Первый INSERT -->
+        <insert tableName="question_option">
+            <column name="id" valueComputed="gen_random_uuid()"/>
+            <column name="question_text" value="Какое образование вы получаете? (выберите один ответ)"/>
+            <column name="create_ts" valueComputed="now()"/>
+            <column name="created_by" value="evilfly0"/>
+        </insert>
+
+        <!-- Второй INSERT -->
+        <insert tableName="question_option">
+            <column name="id" valueComputed="gen_random_uuid()"/>
+            <column name="question_text" value="Студентом какого учебного заведения вы являетесь?  (указать название)"/>
+            <column name="create_ts" valueComputed="now()"/>
+            <column name="created_by" value="evilfly0"/>
+        </insert>
+
+        <!-- Третий INSERT -->
+        <insert tableName="question_option">
+            <column name="id" valueComputed="gen_random_uuid()"/>
+            <column name="question_text" value="Укажите ваш курс обучения (выберите один ответ)"/>
+            <column name="create_ts" valueComputed="now()"/>
+            <column name="created_by" value="evilfly0"/>
+        </insert>
+
+        <!-- Четвертый INSERT -->
+        <insert tableName="question_option">
+            <column name="id" valueComputed="gen_random_uuid()"/>
+            <column name="question_text" value="Укажите какой вид практики вы проходили (выберите один ответ)"/>
+            <column name="create_ts" valueComputed="now()"/>
+            <column name="created_by" value="evilfly0"/>
+        </insert>
+
+        <!-- Пятый INSERT -->
+        <insert tableName="question_option">
+            <column name="id" valueComputed="gen_random_uuid()"/>
+            <column name="question_text" value="Что для вас представляет  практика? (выберите не более 3-х вариантов ответов)"/>
+            <column name="create_ts" valueComputed="now()"/>
+            <column name="created_by" value="evilfly0"/>
+        </insert>
+
+        <!-- Шестой INSERT -->
+        <insert tableName="question_option">
+            <column name="id" valueComputed="gen_random_uuid()"/>
+            <column name="question_text" value="Укажите подразделение АНХК, в котором вы проходили практику (пример заполнения – нефтеперерабатывающее производство, цех 17/19)"/>
+            <column name="create_ts" valueComputed="now()"/>
+            <column name="created_by" value="evilfly0"/>
+        </insert>
+
+        <!-- Седьмой INSERT -->
+        <insert tableName="question_option">
+            <column name="id" valueComputed="gen_random_uuid()"/>
+            <column name="question_text" value="Вам выдали комплект средств индивидуальной защиты (спецодежда, противогаз и т.п.) при прохождении практики в подразделении ? (выберите один вариант)"/>
+            <column name="create_ts" valueComputed="now()"/>
+            <column name="created_by" value="evilfly0"/>
+        </insert>
+
+        <!-- Восьмой INSERT -->
+        <insert tableName="question_option">
+            <column name="id" valueComputed="gen_random_uuid()"/>
+            <column name="question_text" value="Что вы делали в ходе практики? (неограниченный выбор вариантов ответов)"/>
+            <column name="create_ts" valueComputed="now()"/>
+            <column name="created_by" value="evilfly0"/>
+        </insert>
+
+        <!-- Девятый INSERT -->
+        <insert tableName="question_option">
+            <column name="id" valueComputed="gen_random_uuid()"/>
+            <column name="question_text" value="Оцените по 5-бальной шкале (1-очень плохо, 5 – отлично) проведение инструктажа по охране труда и технике безопасности, надзор за соблюдением вами правил техники безопасности"/>
+            <column name="create_ts" valueComputed="now()"/>
+            <column name="created_by" value="evilfly0"/>
+        </insert>
+
+        <!-- Десятый INSERT -->
+        <insert tableName="question_option">
+            <column name="id" valueComputed="gen_random_uuid()"/>
+            <column name="question_text" value="Оцените по 5-бальной шкале (1-очень плохо, 5 – отлично) ознакомление с правилами внутреннего трудового распорядка и локальными нормативными документами АНХК"/>
+            <column name="create_ts" valueComputed="now()"/>
+            <column name="created_by" value="evilfly0"/>
+        </insert>
+
+        <!-- Одиннадцатый INSERT -->
+        <insert tableName="question_option">
+            <column name="id" valueComputed="gen_random_uuid()"/>
+            <column name="question_text" value="Оцените по 5-бальной шкале (1-очень плохо, 5 – отлично) проведение необходимых консультаций, разъяснение непонятного материала"/>
+            <column name="create_ts" valueComputed="now()"/>
+            <column name="created_by" value="evilfly0"/>
+        </insert>
+
+        <!-- Двенадцатый INSERT -->
+        <insert tableName="question_option">
+            <column name="id" valueComputed="gen_random_uuid()"/>
+            <column name="question_text" value="Оцените по 5-бальной шкале (1-очень плохо, 5 – отлично) помощь при оформлении документов"/>
+            <column name="create_ts" valueComputed="now()"/>
+            <column name="created_by" value="evilfly0"/>
+        </insert>
+
+        <!-- Тринадцатый INSERT -->
+        <insert tableName="question_option">
+            <column name="id" valueComputed="gen_random_uuid()"/>
+            <column name="question_text" value="Оцените по 5-бальной шкале (1-очень плохо, 5 – отлично) помощь при возникновении проблемных ситуаций"/>
+            <column name="create_ts" valueComputed="now()"/>
+            <column name="created_by" value="evilfly0"/>
+        </insert>
+
+        <!-- Четырнадцатый INSERT -->
+        <insert tableName="question_option">
+            <column name="id" valueComputed="gen_random_uuid()"/>
+            <column name="question_text" value="Оцените по 5-бальной шкале (1-очень плохо, 5 – отлично) вашу удовлетворенность всей практикой в АНХК"/>
+            <column name="create_ts" valueComputed="now()"/>
+            <column name="created_by" value="evilfly0"/>
+        </insert>
+
+        <!-- Пятнадцатый INSERT -->
+        <insert tableName="question_option">
+            <column name="id" valueComputed="gen_random_uuid()"/>
+            <column name="question_text" value="Оцените по 5-бальной шкале (1-очень плохо, 5 – отлично) установочную встречу в кадровой службе"/>
+            <column name="create_ts" valueComputed="now()"/>
+            <column name="created_by" value="evilfly0"/>
+        </insert>
+
+        <!-- Шестнадцатый INSERT -->
+        <insert tableName="question_option">
+            <column name="id" valueComputed="gen_random_uuid()"/>
+            <column name="question_text" value="Оцените по 5-бальной шкале (1-очень плохо, 5 – отлично) вводный инструктаж по охране труда и промышленной безопасности"/>
+            <column name="create_ts" valueComputed="now()"/>
+            <column name="created_by" value="evilfly0"/>
+        </insert>
+
+        <!-- Семнадцатый INSERT -->
+        <insert tableName="question_option">
+            <column name="id" valueComputed="gen_random_uuid()"/>
+            <column name="question_text" value="Оцените по 5-бальной шкале (1-очень плохо, 5 – отлично) получение пропуска"/>
+            <column name="create_ts" valueComputed="now()"/>
+            <column name="created_by" value="evilfly0"/>
+        </insert>
+
+        <!-- Восемнадцатый INSERT -->
+        <insert tableName="question_option">
+            <column name="id" valueComputed="gen_random_uuid()"/>
+            <column name="question_text" value="Оцените по 5-бальной шкале (1-очень плохо, 5 – отлично) практику в подразделении"/>
+            <column name="create_ts" valueComputed="now()"/>
+            <column name="created_by" value="evilfly0"/>
+        </insert>
+
+        <!-- Девятнадцатый INSERT -->
+        <insert tableName="question_option">
+            <column name="id" valueComputed="gen_random_uuid()"/>
+            <column name="question_text" value="Как Вы оцениваете итоги практики с точки зрения ее результативности? (не более 3-х вариантов ответов)"/>
+            <column name="create_ts" valueComputed="now()"/>
+            <column name="created_by" value="evilfly0"/>
+        </insert>
+
+        <!-- Двадцатый INSERT -->
+        <insert tableName="question_option">
+            <column name="id" valueComputed="gen_random_uuid()"/>
+            <column name="question_text" value="Хотели бы вы в дальнейшем стать работником АО «АНХК»?"/>
+            <column name="create_ts" valueComputed="now()"/>
+            <column name="created_by" value="evilfly0"/>
+        </insert>
+
+        <!-- Ответы на вопрос "Какое образование вы получаете? (выберите один ответ)" -->
+        <insert tableName="answer_option">
+            <column name="id" valueComputed="gen_random_uuid()"/>
+            <column name="answer_text" value="Высшее"/>
+            <column name="create_ts" valueComputed="now()"/>
+            <column name="created_by" value="evilfly0"/>
+            <column name="question_id" valueComputed="(SELECT id FROM question_option WHERE question_text = 'Какое образование вы получаете? (выберите один ответ)')"/>
+        </insert>
+        <insert tableName="answer_option">
+            <column name="id" valueComputed="gen_random_uuid()"/>
+            <column name="answer_text" value="Среднее профессиональное (техникум)"/>
+            <column name="create_ts" valueComputed="now()"/>
+            <column name="created_by" value="evilfly0"/>
+            <column name="question_id" valueComputed="(SELECT id FROM question_option WHERE question_text = 'Какое образование вы получаете? (выберите один ответ)')"/>
+        </insert>
+
+        <!-- Ответы на вопрос "Укажите ваш курс обучения (выберите один ответ)" -->
+        <insert tableName="answer_option">
+            <column name="id" valueComputed="gen_random_uuid()"/>
+            <column name="answer_text" value="1"/>
+            <column name="create_ts" valueComputed="now()"/>
+            <column name="created_by" value="evilfly0"/>
+            <column name="question_id" valueComputed="(SELECT id FROM question_option WHERE question_text = 'Укажите ваш курс обучения (выберите один ответ)')"/>
+        </insert>
+        <insert tableName="answer_option">
+            <column name="id" valueComputed="gen_random_uuid()"/>
+            <column name="answer_text" value="2"/>
+            <column name="create_ts" valueComputed="now()"/>
+            <column name="created_by" value="evilfly0"/>
+            <column name="question_id" valueComputed="(SELECT id FROM question_option WHERE question_text = 'Укажите ваш курс обучения (выберите один ответ)')"/>
+        </insert>
+        <insert tableName="answer_option">
+            <column name="id" valueComputed="gen_random_uuid()"/>
+            <column name="answer_text" value="3"/>
+            <column name="create_ts" valueComputed="now()"/>
+            <column name="created_by" value="evilfly0"/>
+            <column name="question_id" valueComputed="(SELECT id FROM question_option WHERE question_text = 'Укажите ваш курс обучения (выберите один ответ)')"/>
+        </insert>
+        <insert tableName="answer_option">
+            <column name="id" valueComputed="gen_random_uuid()"/>
+            <column name="answer_text" value="4"/>
+            <column name="create_ts" valueComputed="now()"/>
+            <column name="created_by" value="evilfly0"/>
+            <column name="question_id" valueComputed="(SELECT id FROM question_option WHERE question_text = 'Укажите ваш курс обучения (выберите один ответ)')"/>
+        </insert>
+        <insert tableName="answer_option">
+            <column name="id" valueComputed="gen_random_uuid()"/>
+            <column name="answer_text" value="5"/>
+            <column name="create_ts" valueComputed="now()"/>
+            <column name="created_by" value="evilfly0"/>
+            <column name="question_id" valueComputed="(SELECT id FROM question_option WHERE question_text = 'Укажите ваш курс обучения (выберите один ответ)')"/>
+        </insert>
+
+        <!-- Ответы на вопрос "Укажите какой вид практики вы проходили (выберите один ответ)" -->
+        <insert tableName="answer_option">
+            <column name="id" valueComputed="gen_random_uuid()"/>
+            <column name="answer_text" value="Учебная"/>
+            <column name="create_ts" valueComputed="now()"/>
+            <column name="created_by" value="evilfly0"/>
+            <column name="question_id" valueComputed="(SELECT id FROM question_option WHERE question_text = 'Укажите какой вид практики вы проходили (выберите один ответ)')"/>
+        </insert>
+        <insert tableName="answer_option">
+            <column name="id" valueComputed="gen_random_uuid()"/>
+            <column name="answer_text" value="Производственная"/>
+            <column name="create_ts" valueComputed="now()"/>
+            <column name="created_by" value="evilfly0"/>
+            <column name="question_id" valueComputed="(SELECT id FROM question_option WHERE question_text = 'Укажите какой вид практики вы проходили (выберите один ответ)')"/>
+        </insert>
+        <insert tableName="answer_option">
+            <column name="id" valueComputed="gen_random_uuid()"/>
+            <column name="answer_text" value="Преддипломная"/>
+            <column name="create_ts" valueComputed="now()"/>
+            <column name="created_by" value="evilfly0"/>
+            <column name="question_id" valueComputed="(SELECT id FROM question_option WHERE question_text = 'Укажите какой вид практики вы проходили (выберите один ответ)')"/>
+        </insert>
+
+        <!-- Ответы на вопрос "Вам выдали комплект средств индивидуальной защиты..." -->
+        <insert tableName="answer_option">
+            <column name="id" valueComputed="gen_random_uuid()"/>
+            <column name="answer_text" value="Да"/>
+            <column name="create_ts" valueComputed="now()"/>
+            <column name="created_by" value="evilfly0"/>
+            <column name="question_id" valueComputed="(SELECT id FROM question_option WHERE question_text = 'Вам выдали комплект средств индивидуальной защиты (спецодежда, противогаз и т.п.) при прохождении практики в подразделении ? (выберите один вариант)')"/>
+        </insert>
+        <insert tableName="answer_option">
+            <column name="id" valueComputed="gen_random_uuid()"/>
+            <column name="answer_text" value="Нет"/>
+            <column name="create_ts" valueComputed="now()"/>
+            <column name="created_by" value="evilfly0"/>
+            <column name="question_id" valueComputed="(SELECT id FROM question_option WHERE question_text = 'Вам выдали комплект средств индивидуальной защиты (спецодежда, противогаз и т.п.) при прохождении практики в подразделении ? (выберите один вариант)')"/>
+        </insert>
+        <insert tableName="answer_option">
+            <column name="id" valueComputed="gen_random_uuid()"/>
+            <column name="answer_text" value="Не требуется (практика в офисе)"/>
+            <column name="create_ts" valueComputed="now()"/>
+            <column name="created_by" value="evilfly0"/>
+            <column name="question_id" valueComputed="(SELECT id FROM question_option WHERE question_text = 'Вам выдали комплект средств индивидуальной защиты (спецодежда, противогаз и т.п.) при прохождении практики в подразделении ? (выберите один вариант)')"/>
+        </insert>
+
+        <!-- Ответы на вопрос "Оцените по 5-бальной шкале..." -->
+        <!-- Пример для одного вопроса, остальные аналогично -->
+        <insert tableName="answer_option">
+            <column name="id" valueComputed="gen_random_uuid()"/>
+            <column name="answer_text" value="1"/>
+            <column name="create_ts" valueComputed="now()"/>
+            <column name="created_by" value="evilfly0"/>
+            <column name="question_id" valueComputed="(SELECT id FROM question_option WHERE question_text = 'Оцените по 5-бальной шкале (1-очень плохо, 5 – отлично) проведение инструктажа по охране труда и технике безопасности, надзор за соблюдением вами правил техники безопасности')"/>
+        </insert>
+        <insert tableName="answer_option">
+            <column name="id" valueComputed="gen_random_uuid()"/>
+            <column name="answer_text" value="2"/>
+            <column name="create_ts" valueComputed="now()"/>
+            <column name="created_by" value="evilfly0"/>
+            <column name="question_id" valueComputed="(SELECT id FROM question_option WHERE question_text = 'Оцените по 5-бальной шкале (1-очень плохо, 5 – отлично) проведение инструктажа по охране труда и технике безопасности, надзор за соблюдением вами правил техники безопасности')"/>
+        </insert>
+        <insert tableName="answer_option">
+            <column name="id" valueComputed="gen_random_uuid()"/>
+            <column name="answer_text" value="3"/>
+            <column name="create_ts" valueComputed="now()"/>
+            <column name="created_by" value="evilfly0"/>
+            <column name="question_id" valueComputed="(SELECT id FROM question_option WHERE question_text = 'Оцените по 5-бальной шкале (1-очень плохо, 5 – отлично) проведение инструктажа по охране труда и технике безопасности, надзор за соблюдением вами правил техники безопасности')"/>
+        </insert>
+        <insert tableName="answer_option">
+            <column name="id" valueComputed="gen_random_uuid()"/>
+            <column name="answer_text" value="4"/>
+            <column name="create_ts" valueComputed="now()"/>
+            <column name="created_by" value="evilfly0"/>
+            <column name="question_id" valueComputed="(SELECT id FROM question_option WHERE question_text = 'Оцените по 5-бальной шкале (1-очень плохо, 5 – отлично) проведение инструктажа по охране труда и технике безопасности, надзор за соблюдением вами правил техники безопасности')"/>
+        </insert>
+        <insert tableName="answer_option">
+            <column name="id" valueComputed="gen_random_uuid()"/>
+            <column name="answer_text" value="5"/>
+            <column name="create_ts" valueComputed="now()"/>
+            <column name="created_by" value="evilfly0"/>
+            <column name="question_id" valueComputed="(SELECT id FROM question_option WHERE question_text = 'Оцените по 5-бальной шкале (1-очень плохо, 5 – отлично) проведение инструктажа по охране труда и технике безопасности, надзор за соблюдением вами правил техники безопасности')"/>
+        </insert>
+
+        <!-- Ответы на вопрос "Оцените по 5-бальной шкале ознакомление с правилами..." -->
+        <insert tableName="answer_option">
+            <column name="id" valueComputed="gen_random_uuid()"/>
+            <column name="answer_text" value="1"/>
+            <column name="create_ts" valueComputed="now()"/>
+            <column name="created_by" value="evilfly0"/>
+            <column name="question_id" valueComputed="(SELECT id FROM question_option WHERE question_text = 'Оцените по 5-бальной шкале (1-очень плохо, 5 – отлично) ознакомление с правилами внутреннего трудового распорядка и локальными нормативными документами АНХК')"/>
+        </insert>
+        <insert tableName="answer_option">
+            <column name="id" valueComputed="gen_random_uuid()"/>
+            <column name="answer_text" value="2"/>
+            <column name="create_ts" valueComputed="now()"/>
+            <column name="created_by" value="evilfly0"/>
+            <column name="question_id" valueComputed="(SELECT id FROM question_option WHERE question_text = 'Оцените по 5-бальной шкале (1-очень плохо, 5 – отлично) ознакомление с правилами внутреннего трудового распорядка и локальными нормативными документами АНХК')"/>
+        </insert>
+        <insert tableName="answer_option">
+            <column name="id" valueComputed="gen_random_uuid()"/>
+            <column name="answer_text" value="3"/>
+            <column name="create_ts" valueComputed="now()"/>
+            <column name="created_by" value="evilfly0"/>
+            <column name="question_id" valueComputed="(SELECT id FROM question_option WHERE question_text = 'Оцените по 5-бальной шкале (1-очень плохо, 5 – отлично) ознакомление с правилами внутреннего трудового распорядка и локальными нормативными документами АНХК')"/>
+        </insert>
+        <insert tableName="answer_option">
+            <column name="id" valueComputed="gen_random_uuid()"/>
+            <column name="answer_text" value="4"/>
+            <column name="create_ts" valueComputed="now()"/>
+            <column name="created_by" value="evilfly0"/>
+            <column name="question_id" valueComputed="(SELECT id FROM question_option WHERE question_text = 'Оцените по 5-бальной шкале (1-очень плохо, 5 – отлично) ознакомление с правилами внутреннего трудового распорядка и локальными нормативными документами АНХК')"/>
+        </insert>
+        <insert tableName="answer_option">
+            <column name="id" valueComputed="gen_random_uuid()"/>
+            <column name="answer_text" value="5"/>
+            <column name="create_ts" valueComputed="now()"/>
+            <column name="created_by" value="evilfly0"/>
+            <column name="question_id" valueComputed="(SELECT id FROM question_option WHERE question_text = 'Оцените по 5-бальной шкале (1-очень плохо, 5 – отлично) ознакомление с правилами внутреннего трудового распорядка и локальными нормативными документами АНХК')"/>
+        </insert>
+
+        <!-- Ответы на вопрос "Оцените по 5-бальной шкале проведение необходимых консультаций..." -->
+        <insert tableName="answer_option">
+            <column name="id" valueComputed="gen_random_uuid()"/>
+            <column name="answer_text" value="1"/>
+            <column name="create_ts" valueComputed="now()"/>
+            <column name="created_by" value="evilfly0"/>
+            <column name="question_id" valueComputed="(SELECT id FROM question_option WHERE question_text = 'Оцените по 5-бальной шкале (1-очень плохо, 5 – отлично) проведение необходимых консультаций, разъяснение непонятного материала')"/>
+        </insert>
+        <insert tableName="answer_option">
+            <column name="id" valueComputed="gen_random_uuid()"/>
+            <column name="answer_text" value="2"/>
+            <column name="create_ts" valueComputed="now()"/>
+            <column name="created_by" value="evilfly0"/>
+            <column name="question_id" valueComputed="(SELECT id FROM question_option WHERE question_text = 'Оцените по 5-бальной шкале (1-очень плохо, 5 – отлично) проведение необходимых консультаций, разъяснение непонятного материала')"/>
+        </insert>
+        <insert tableName="answer_option">
+            <column name="id" valueComputed="gen_random_uuid()"/>
+            <column name="answer_text" value="3"/>
+            <column name="create_ts" valueComputed="now()"/>
+            <column name="created_by" value="evilfly0"/>
+            <column name="question_id" valueComputed="(SELECT id FROM question_option WHERE question_text = 'Оцените по 5-бальной шкале (1-очень плохо, 5 – отлично) проведение необходимых консультаций, разъяснение непонятного материала')"/>
+        </insert>
+        <insert tableName="answer_option">
+            <column name="id" valueComputed="gen_random_uuid()"/>
+            <column name="answer_text" value="4"/>
+            <column name="create_ts" valueComputed="now()"/>
+            <column name="created_by" value="evilfly0"/>
+            <column name="question_id" valueComputed="(SELECT id FROM question_option WHERE question_text = 'Оцените по 5-бальной шкале (1-очень плохо, 5 – отлично) проведение необходимых консультаций, разъяснение непонятного материала')"/>
+        </insert>
+        <insert tableName="answer_option">
+            <column name="id" valueComputed="gen_random_uuid()"/>
+            <column name="answer_text" value="5"/>
+            <column name="create_ts" valueComputed="now()"/>
+            <column name="created_by" value="evilfly0"/>
+            <column name="question_id" valueComputed="(SELECT id FROM question_option WHERE question_text = 'Оцените по 5-бальной шкале (1-очень плохо, 5 – отлично) проведение необходимых консультаций, разъяснение непонятного материала')"/>
+        </insert>
+
+        <!-- Ответы на вопрос "Оцените по 5-бальной шкале помощь при оформлении документов..." -->
+        <insert tableName="answer_option">
+            <column name="id" valueComputed="gen_random_uuid()"/>
+            <column name="answer_text" value="1"/>
+            <column name="create_ts" valueComputed="now()"/>
+            <column name="created_by" value="evilfly0"/>
+            <column name="question_id" valueComputed="(SELECT id FROM question_option WHERE question_text = 'Оцените по 5-бальной шкале (1-очень плохо, 5 – отлично) помощь при оформлении документов')"/>
+        </insert>
+        <insert tableName="answer_option">
+            <column name="id" valueComputed="gen_random_uuid()"/>
+            <column name="answer_text" value="2"/>
+            <column name="create_ts" valueComputed="now()"/>
+            <column name="created_by" value="evilfly0"/>
+            <column name="question_id" valueComputed="(SELECT id FROM question_option WHERE question_text = 'Оцените по 5-бальной шкале (1-очень плохо, 5 – отлично) помощь при оформлении документов')"/>
+        </insert>
+        <insert tableName="answer_option">
+            <column name="id" valueComputed="gen_random_uuid()"/>
+            <column name="answer_text" value="3"/>
+            <column name="create_ts" valueComputed="now()"/>
+            <column name="created_by" value="evilfly0"/>
+            <column name="question_id" valueComputed="(SELECT id FROM question_option WHERE question_text = 'Оцените по 5-бальной шкале (1-очень плохо, 5 – отлично) помощь при оформлении документов')"/>
+        </insert>
+        <insert tableName="answer_option">
+            <column name="id" valueComputed="gen_random_uuid()"/>
+            <column name="answer_text" value="4"/>
+            <column name="create_ts" valueComputed="now()"/>
+            <column name="created_by" value="evilfly0"/>
+            <column name="question_id" valueComputed="(SELECT id FROM question_option WHERE question_text = 'Оцените по 5-бальной шкале (1-очень плохо, 5 – отлично) помощь при оформлении документов')"/>
+        </insert>
+        <insert tableName="answer_option">
+            <column name="id" valueComputed="gen_random_uuid()"/>
+            <column name="answer_text" value="5"/>
+            <column name="create_ts" valueComputed="now()"/>
+            <column name="created_by" value="evilfly0"/>
+            <column name="question_id" valueComputed="(SELECT id FROM question_option WHERE question_text = 'Оцените по 5-бальной шкале (1-очень плохо, 5 – отлично) помощь при оформлении документов')"/>
+        </insert>
+
+        <!-- Ответы на вопрос "Оцените по 5-бальной шкале помощь при возникновении проблемных ситуаций..." -->
+        <insert tableName="answer_option">
+            <column name="id" valueComputed="gen_random_uuid()"/>
+            <column name="answer_text" value="1"/>
+            <column name="create_ts" valueComputed="now()"/>
+            <column name="created_by" value="evilfly0"/>
+            <column name="question_id" valueComputed="(SELECT id FROM question_option WHERE question_text = 'Оцените по 5-бальной шкале (1-очень плохо, 5 – отлично) помощь при возникновении проблемных ситуаций')"/>
+        </insert>
+        <insert tableName="answer_option">
+            <column name="id" valueComputed="gen_random_uuid()"/>
+            <column name="answer_text" value="2"/>
+            <column name="create_ts" valueComputed="now()"/>
+            <column name="created_by" value="evilfly0"/>
+            <column name="question_id" valueComputed="(SELECT id FROM question_option WHERE question_text = 'Оцените по 5-бальной шкале (1-очень плохо, 5 – отлично) помощь при возникновении проблемных ситуаций')"/>
+        </insert>
+        <insert tableName="answer_option">
+            <column name="id" valueComputed="gen_random_uuid()"/>
+            <column name="answer_text" value="3"/>
+            <column name="create_ts" valueComputed="now()"/>
+            <column name="created_by" value="evilfly0"/>
+            <column name="question_id" valueComputed="(SELECT id FROM question_option WHERE question_text = 'Оцените по 5-бальной шкале (1-очень плохо, 5 – отлично) помощь при возникновении проблемных ситуаций')"/>
+        </insert>
+        <insert tableName="answer_option">
+            <column name="id" valueComputed="gen_random_uuid()"/>
+            <column name="answer_text" value="4"/>
+            <column name="create_ts" valueComputed="now()"/>
+            <column name="created_by" value="evilfly0"/>
+            <column name="question_id" valueComputed="(SELECT id FROM question_option WHERE question_text = 'Оцените по 5-бальной шкале (1-очень плохо, 5 – отлично) помощь при возникновении проблемных ситуаций')"/>
+        </insert>
+        <insert tableName="answer_option">
+            <column name="id" valueComputed="gen_random_uuid()"/>
+            <column name="answer_text" value="5"/>
+            <column name="create_ts" valueComputed="now()"/>
+            <column name="created_by" value="evilfly0"/>
+            <column name="question_id" valueComputed="(SELECT id FROM question_option WHERE question_text = 'Оцените по 5-бальной шкале (1-очень плохо, 5 – отлично) помощь при возникновении проблемных ситуаций')"/>
+        </insert>
+
+        <!-- Ответы на вопрос "Оцените по 5-бальной шкале вашу удовлетворенность всей практикой в АНХК..." -->
+        <insert tableName="answer_option">
+            <column name="id" valueComputed="gen_random_uuid()"/>
+            <column name="answer_text" value="1"/>
+            <column name="create_ts" valueComputed="now()"/>
+            <column name="created_by" value="evilfly0"/>
+            <column name="question_id" valueComputed="(SELECT id FROM question_option WHERE question_text = 'Оцените по 5-бальной шкале (1-очень плохо, 5 – отлично) вашу удовлетворенность всей практикой в АНХК')"/>
+        </insert>
+        <insert tableName="answer_option">
+            <column name="id" valueComputed="gen_random_uuid()"/>
+            <column name="answer_text" value="2"/>
+            <column name="create_ts" valueComputed="now()"/>
+            <column name="created_by" value="evilfly0"/>
+            <column name="question_id" valueComputed="(SELECT id FROM question_option WHERE question_text = 'Оцените по 5-бальной шкале (1-очень плохо, 5 – отлично) вашу удовлетворенность всей практикой в АНХК')"/>
+        </insert>
+        <insert tableName="answer_option">
+            <column name="id" valueComputed="gen_random_uuid()"/>
+            <column name="answer_text" value="3"/>
+            <column name="create_ts" valueComputed="now()"/>
+            <column name="created_by" value="evilfly0"/>
+            <column name="question_id" valueComputed="(SELECT id FROM question_option WHERE question_text = 'Оцените по 5-бальной шкале (1-очень плохо, 5 – отлично) вашу удовлетворенность всей практикой в АНХК')"/>
+        </insert>
+        <insert tableName="answer_option">
+            <column name="id" valueComputed="gen_random_uuid()"/>
+            <column name="answer_text" value="4"/>
+            <column name="create_ts" valueComputed="now()"/>
+            <column name="created_by" value="evilfly0"/>
+            <column name="question_id" valueComputed="(SELECT id FROM question_option WHERE question_text = 'Оцените по 5-бальной шкале (1-очень плохо, 5 – отлично) вашу удовлетворенность всей практикой в АНХК')"/>
+        </insert>
+        <insert tableName="answer_option">
+            <column name="id" valueComputed="gen_random_uuid()"/>
+            <column name="answer_text" value="5"/>
+            <column name="create_ts" valueComputed="now()"/>
+            <column name="created_by" value="evilfly0"/>
+            <column name="question_id" valueComputed="(SELECT id FROM question_option WHERE question_text = 'Оцените по 5-бальной шкале (1-очень плохо, 5 – отлично) вашу удовлетворенность всей практикой в АНХК')"/>
+        </insert>
+
+        <!-- Ответы на вопрос "Оцените по 5-бальной шкале установочную встречу в кадровой службе..." -->
+        <insert tableName="answer_option">
+            <column name="id" valueComputed="gen_random_uuid()"/>
+            <column name="answer_text" value="1"/>
+            <column name="create_ts" valueComputed="now()"/>
+            <column name="created_by" value="evilfly0"/>
+            <column name="question_id" valueComputed="(SELECT id FROM question_option WHERE question_text = 'Оцените по 5-бальной шкале (1-очень плохо, 5 – отлично) установочную встречу в кадровой службе')"/>
+        </insert>
+        <insert tableName="answer_option">
+            <column name="id" valueComputed="gen_random_uuid()"/>
+            <column name="answer_text" value="2"/>
+            <column name="create_ts" valueComputed="now()"/>
+            <column name="created_by" value="evilfly0"/>
+            <column name="question_id" valueComputed="(SELECT id FROM question_option WHERE question_text = 'Оцените по 5-бальной шкале (1-очень плохо, 5 – отлично) установочную встречу в кадровой службе')"/>
+        </insert>
+        <insert tableName="answer_option">
+            <column name="id" valueComputed="gen_random_uuid()"/>
+            <column name="answer_text" value="3"/>
+            <column name="create_ts" valueComputed="now()"/>
+            <column name="created_by" value="evilfly0"/>
+            <column name="question_id" valueComputed="(SELECT id FROM question_option WHERE question_text = 'Оцените по 5-бальной шкале (1-очень плохо, 5 – отлично) установочную встречу в кадровой службе')"/>
+        </insert>
+        <insert tableName="answer_option">
+            <column name="id" valueComputed="gen_random_uuid()"/>
+            <column name="answer_text" value="4"/>
+            <column name="create_ts" valueComputed="now()"/>
+            <column name="created_by" value="evilfly0"/>
+            <column name="question_id" valueComputed="(SELECT id FROM question_option WHERE question_text = 'Оцените по 5-бальной шкале (1-очень плохо, 5 – отлично) установочную встречу в кадровой службе')"/>
+        </insert>
+        <insert tableName="answer_option">
+            <column name="id" valueComputed="gen_random_uuid()"/>
+            <column name="answer_text" value="5"/>
+            <column name="create_ts" valueComputed="now()"/>
+            <column name="created_by" value="evilfly0"/>
+            <column name="question_id" valueComputed="(SELECT id FROM question_option WHERE question_text = 'Оцените по 5-бальной шкале (1-очень плохо, 5 – отлично) установочную встречу в кадровой службе')"/>
+        </insert>
+
+        <!-- Ответы на вопрос "Оцените по 5-бальной шкале вводный инструктаж по охране труда и промышленной безопасности..." -->
+        <insert tableName="answer_option">
+            <column name="id" valueComputed="gen_random_uuid()"/>
+            <column name="answer_text" value="1"/>
+            <column name="create_ts" valueComputed="now()"/>
+            <column name="created_by" value="evilfly0"/>
+            <column name="question_id" valueComputed="(SELECT id FROM question_option WHERE question_text = 'Оцените по 5-бальной шкале (1-очень плохо, 5 – отлично) вводный инструктаж по охране труда и промышленной безопасности')"/>
+        </insert>
+        <insert tableName="answer_option">
+            <column name="id" valueComputed="gen_random_uuid()"/>
+            <column name="answer_text" value="2"/>
+            <column name="create_ts" valueComputed="now()"/>
+            <column name="created_by" value="evilfly0"/>
+            <column name="question_id" valueComputed="(SELECT id FROM question_option WHERE question_text = 'Оцените по 5-бальной шкале (1-очень плохо, 5 – отлично) вводный инструктаж по охране труда и промышленной безопасности')"/>
+        </insert>
+        <insert tableName="answer_option">
+            <column name="id" valueComputed="gen_random_uuid()"/>
+            <column name="answer_text" value="3"/>
+            <column name="create_ts" valueComputed="now()"/>
+            <column name="created_by" value="evilfly0"/>
+            <column name="question_id" valueComputed="(SELECT id FROM question_option WHERE question_text = 'Оцените по 5-бальной шкале (1-очень плохо, 5 – отлично) вводный инструктаж по охране труда и промышленной безопасности')"/>
+        </insert>
+        <insert tableName="answer_option">
+            <column name="id" valueComputed="gen_random_uuid()"/>
+            <column name="answer_text" value="4"/>
+            <column name="create_ts" valueComputed="now()"/>
+            <column name="created_by" value="evilfly0"/>
+            <column name="question_id" valueComputed="(SELECT id FROM question_option WHERE question_text = 'Оцените по 5-бальной шкале (1-очень плохо, 5 – отлично) вводный инструктаж по охране труда и промышленной безопасности')"/>
+        </insert>
+        <insert tableName="answer_option">
+            <column name="id" valueComputed="gen_random_uuid()"/>
+            <column name="answer_text" value="5"/>
+            <column name="create_ts" valueComputed="now()"/>
+            <column name="created_by" value="evilfly0"/>
+            <column name="question_id" valueComputed="(SELECT id FROM question_option WHERE question_text = 'Оцените по 5-бальной шкале (1-очень плохо, 5 – отлично) вводный инструктаж по охране труда и промышленной безопасности')"/>
+        </insert>
+
+        <!-- Ответы на вопрос "Оцените по 5-бальной шкале получение пропуска..." -->
+        <insert tableName="answer_option">
+            <column name="id" valueComputed="gen_random_uuid()"/>
+            <column name="answer_text" value="1"/>
+            <column name="create_ts" valueComputed="now()"/>
+            <column name="created_by" value="evilfly0"/>
+            <column name="question_id" valueComputed="(SELECT id FROM question_option WHERE question_text = 'Оцените по 5-бальной шкале (1-очень плохо, 5 – отлично) получение пропуска')"/>
+        </insert>
+        <insert tableName="answer_option">
+            <column name="id" valueComputed="gen_random_uuid()"/>
+            <column name="answer_text" value="2"/>
+            <column name="create_ts" valueComputed="now()"/>
+            <column name="created_by" value="evilfly0"/>
+            <column name="question_id" valueComputed="(SELECT id FROM question_option WHERE question_text = 'Оцените по 5-бальной шкале (1-очень плохо, 5 – отлично) получение пропуска')"/>
+        </insert>
+        <insert tableName="answer_option">
+            <column name="id" valueComputed="gen_random_uuid()"/>
+            <column name="answer_text" value="3"/>
+            <column name="create_ts" valueComputed="now()"/>
+            <column name="created_by" value="evilfly0"/>
+            <column name="question_id" valueComputed="(SELECT id FROM question_option WHERE question_text = 'Оцените по 5-бальной шкале (1-очень плохо, 5 – отлично) получение пропуска')"/>
+        </insert>
+        <insert tableName="answer_option">
+            <column name="id" valueComputed="gen_random_uuid()"/>
+            <column name="answer_text" value="4"/>
+            <column name="create_ts" valueComputed="now()"/>
+            <column name="created_by" value="evilfly0"/>
+            <column name="question_id" valueComputed="(SELECT id FROM question_option WHERE question_text = 'Оцените по 5-бальной шкале (1-очень плохо, 5 – отлично) получение пропуска')"/>
+        </insert>
+        <insert tableName="answer_option">
+            <column name="id" valueComputed="gen_random_uuid()"/>
+            <column name="answer_text" value="5"/>
+            <column name="create_ts" valueComputed="now()"/>
+            <column name="created_by" value="evilfly0"/>
+            <column name="question_id" valueComputed="(SELECT id FROM question_option WHERE question_text = 'Оцените по 5-бальной шкале (1-очень плохо, 5 – отлично) получение пропуска')"/>
+        </insert>
+
+        <!-- Ответы на вопрос "Оцените по 5-бальной шкале практику в подразделении..." -->
+        <insert tableName="answer_option">
+            <column name="id" valueComputed="gen_random_uuid()"/>
+            <column name="answer_text" value="1"/>
+            <column name="create_ts" valueComputed="now()"/>
+            <column name="created_by" value="evilfly0"/>
+            <column name="question_id" valueComputed="(SELECT id FROM question_option WHERE question_text = 'Оцените по 5-бальной шкале (1-очень плохо, 5 – отлично) практику в подразделении')"/>
+        </insert>
+        <insert tableName="answer_option">
+            <column name="id" valueComputed="gen_random_uuid()"/>
+            <column name="answer_text" value="2"/>
+            <column name="create_ts" valueComputed="now()"/>
+            <column name="created_by" value="evilfly0"/>
+            <column name="question_id" valueComputed="(SELECT id FROM question_option WHERE question_text = 'Оцените по 5-бальной шкале (1-очень плохо, 5 – отлично) практику в подразделении')"/>
+        </insert>
+        <insert tableName="answer_option">
+            <column name="id" valueComputed="gen_random_uuid()"/>
+            <column name="answer_text" value="3"/>
+            <column name="create_ts" valueComputed="now()"/>
+            <column name="created_by" value="evilfly0"/>
+            <column name="question_id" valueComputed="(SELECT id FROM question_option WHERE question_text = 'Оцените по 5-бальной шкале (1-очень плохо, 5 – отлично) практику в подразделении')"/>
+        </insert>
+        <insert tableName="answer_option">
+            <column name="id" valueComputed="gen_random_uuid()"/>
+            <column name="answer_text" value="4"/>
+            <column name="create_ts" valueComputed="now()"/>
+            <column name="created_by" value="evilfly0"/>
+            <column name="question_id" valueComputed="(SELECT id FROM question_option WHERE question_text = 'Оцените по 5-бальной шкале (1-очень плохо, 5 – отлично) практику в подразделении')"/>
+        </insert>
+        <insert tableName="answer_option">
+            <column name="id" valueComputed="gen_random_uuid()"/>
+            <column name="answer_text" value="5"/>
+            <column name="create_ts" valueComputed="now()"/>
+            <column name="created_by" value="evilfly0"/>
+            <column name="question_id" valueComputed="(SELECT id FROM question_option WHERE question_text = 'Оцените по 5-бальной шкале (1-очень плохо, 5 – отлично) практику в подразделении')"/>
+        </insert>
+
+        <!-- Ответы на вопрос "Как Вы оцениваете итоги практики с точки зрения ее результативности?..." -->
+        <insert tableName="answer_option">
+            <column name="id" valueComputed="gen_random_uuid()"/>
+            <column name="answer_text" value="Практика дала возможность освоения и закрепления знаний и умений, полученных в вузе/сузе"/>
+            <column name="create_ts" valueComputed="now()"/>
+            <column name="created_by" value="evilfly0"/>
+            <column name="question_id" valueComputed="(SELECT id FROM question_option WHERE question_text = 'Как Вы оцениваете итоги практики с точки зрения ее результативности? (не более 3-х вариантов ответов)')"/>
+        </insert>
+        <insert tableName="answer_option">
+            <column name="id" valueComputed="gen_random_uuid()"/>
+            <column name="answer_text" value="Практика обнаружила пробелы в моей специальной подготовке"/>
+            <column name="create_ts" valueComputed="now()"/>
+            <column name="created_by" value="evilfly0"/>
+            <column name="question_id" valueComputed="(SELECT id FROM question_option WHERE question_text = 'Как Вы оцениваете итоги практики с точки зрения ее результативности? (не более 3-х вариантов ответов)')"/>
+        </insert>
+        <insert tableName="answer_option">
+            <column name="id" valueComputed="gen_random_uuid()"/>
+            <column name="answer_text" value="На практике я ещё больше убедился(ась) в правильности выбора профессии"/>
+            <column name="create_ts" valueComputed="now()"/>
+            <column name="created_by" value="evilfly0"/>
+            <column name="question_id" valueComputed="(SELECT id FROM question_option WHERE question_text = 'Как Вы оцениваете итоги практики с точки зрения ее результативности? (не более 3-х вариантов ответов)')"/>
+        </insert>
+        <insert tableName="answer_option">
+            <column name="id" valueComputed="gen_random_uuid()"/>
+            <column name="answer_text" value="Практика разочаровала меня в выбранной профессии"/>
+            <column name="create_ts" valueComputed="now()"/>
+            <column name="created_by" value="evilfly0"/>
+            <column name="question_id" valueComputed="(SELECT id FROM question_option WHERE question_text = 'Как Вы оцениваете итоги практики с точки зрения ее результативности? (не более 3-х вариантов ответов)')"/>
+        </insert>
+        <insert tableName="answer_option">
+            <column name="id" valueComputed="gen_random_uuid()"/>
+            <column name="answer_text" value="Практика позволила мне трудоустроиться"/>
+            <column name="create_ts" valueComputed="now()"/>
+            <column name="created_by" value="evilfly0"/>
+            <column name="question_id" valueComputed="(SELECT id FROM question_option WHERE question_text = 'Как Вы оцениваете итоги практики с точки зрения ее результативности? (не более 3-х вариантов ответов)')"/>
+        </insert>
+        <insert tableName="answer_option">
+            <column name="id" valueComputed="gen_random_uuid()"/>
+            <column name="answer_text" value="Практика носила формальный характер"/>
+            <column name="create_ts" valueComputed="now()"/>
+            <column name="created_by" value="evilfly0"/>
+            <column name="question_id" valueComputed="(SELECT id FROM question_option WHERE question_text = 'Как Вы оцениваете итоги практики с точки зрения ее результативности? (не более 3-х вариантов ответов)')"/>
+        </insert>
+        <insert tableName="answer_option">
+            <column name="id" valueComputed="gen_random_uuid()"/>
+            <column name="answer_text" value="Практика дала возможность сбора и подготовки практического материала для выполнения курсовой работы/выпускной квалификационной работы"/>
+            <column name="create_ts" valueComputed="now()"/>
+            <column name="created_by" value="evilfly0"/>
+            <column name="question_id" valueComputed="(SELECT id FROM question_option WHERE question_text = 'Как Вы оцениваете итоги практики с точки зрения ее результативности? (не более 3-х вариантов ответов)')"/>
+        </insert>
+
+        <!-- Ответы на вопрос "Хотели бы вы в дальнейшем стать работником АО «АНХК»?..." -->
+        <insert tableName="answer_option">
+            <column name="id" valueComputed="gen_random_uuid()"/>
+            <column name="answer_text" value="Да"/>
+            <column name="create_ts" valueComputed="now()"/>
+            <column name="created_by" value="evilfly0"/>
+            <column name="question_id" valueComputed="(SELECT id FROM question_option WHERE question_text = 'Хотели бы вы в дальнейшем стать работником АО «АНХК»?')"/>
+        </insert>
+        <insert tableName="answer_option">
+            <column name="id" valueComputed="gen_random_uuid()"/>
+            <column name="answer_text" value="Нет"/>
+            <column name="create_ts" valueComputed="now()"/>
+            <column name="created_by" value="evilfly0"/>
+            <column name="question_id" valueComputed="(SELECT id FROM question_option WHERE question_text = 'Хотели бы вы в дальнейшем стать работником АО «АНХК»?')"/>
+        </insert>
+        <insert tableName="answer_option">
+            <column name="id" valueComputed="gen_random_uuid()"/>
+            <column name="answer_text" value="Со мной заключили договор о дальнейшем трудоустройстве"/>
+            <column name="create_ts" valueComputed="now()"/>
+            <column name="created_by" value="evilfly0"/>
+            <column name="question_id" valueComputed="(SELECT id FROM question_option WHERE question_text = 'Хотели бы вы в дальнейшем стать работником АО «АНХК»?')"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>

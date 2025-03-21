@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: anhk
+  datasource:
+    url: jdbc:postgresql://localhost:5432/anhk
+    username: postgres
+    password: admin
+    driver-class-name: org.postgresql.Driver
+  liquibase:
+    change-log: classpath:/db/changelog/master.xml
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: validate
+

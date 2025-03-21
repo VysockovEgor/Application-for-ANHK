@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                   https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+
+    <changeSet id="1740817649585-28" author="evilfly0">
+        <insert tableName="role">
+            <column name="name" value="admin"/>
+        </insert>
+        <insert tableName="role">
+            <column name="name" value="student"/>
+        </insert>
+
+        <insert tableName="users">
+            <column name="id" value="21dfae21-df9d-41cf-839a-882b4fb143fc"/>
+            <column name="create_ts" value="2025-03-15 15:35:39.46096+08"/>
+            <column name="created_by" value="evilfly0"/>
+            <column name="login" value="sysadmin"/>
+            <column name="password_hash" value="T872q9"/>
+            <column name="first_name" value="Иван"/>
+            <column name="last_name" value="Иванов"/>
+            <column name="patronymic" value="Иванович"/>
+            <column name="is_active" value="true"/>
+            <column name="practice_start_date" value="2025-03-15 15:35:39.46096+08"/>
+            <column name="practice_finish_date" value="2025-03-15 15:35:39.46096+08"/>
+        </insert>
+
+        <insert tableName="users">
+            <column name="id" value="1ad2bac1-652b-4925-80dd-58a89542dcab"/>
+            <column name="create_ts" value="2025-03-15 15:35:39.46096+08"/>
+            <column name="created_by" value="evilfly0"/>
+            <column name="login" value="sysstudent"/>
+            <column name="password_hash" value="0Scbg4"/>
+            <column name="first_name" value="Пётр"/>
+            <column name="last_name" value="Петров"/>
+            <column name="patronymic" value="Петрович"/>
+            <column name="is_active" value="true"/>
+            <column name="practice_start_date" value="2025-03-15 15:35:39.46096+08"/>
+            <column name="practice_finish_date" value="2025-03-15 15:35:39.46096+08"/>
+        </insert>
+
+        <insert tableName="sys_user_role">
+            <column name="user_id" value="21dfae21-df9d-41cf-839a-882b4fb143fc"/>
+            <column name="role_name" value="admin"/>
+        </insert>
+
+        <insert tableName="sys_user_role">
+            <column name="user_id" value="1ad2bac1-652b-4925-80dd-58a89542dcab"/>
+            <column name="role_name" value="student"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>

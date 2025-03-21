@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet id="1741846261896-2"
+               author="Vadimchik38">
+        <insert tableName="users">
+            <column name="id" value="550e8400-e29b-41d4-a716-446655440000"/>
+            <column name="login" value="janedoe"/>
+            <column name="password_hash" value="hashedPassword1"/>
+            <column name="first_name" value="Jane"/>
+            <column name="last_name" value="Doe"/>
+            <column name="patronymic" value="Ann"/>
+            <column name="email" value="jane.doe@example.com"/>
+            <column name="practice_start_date" valueDate="2023-10-02"/>
+            <column name="practice_finish_date" valueDate="2023-11-02"/>
+            <column name="is_active" valueBoolean="True"/>
+        </insert>
+        <insert tableName="users">
+            <column name="id" value="550e8400-e29b-41d4-a716-446655440001"/>
+            <column name="login" value="michaeljohnson"/>
+            <column name="password_hash" value="hashedPassword2"/>
+            <column name="first_name" value="Michael"/>
+            <column name="last_name" value="Johnson"/>
+            <column name="patronymic" value="James"/>
+            <column name="email" value="michael.johnson@example.com"/>
+            <column name="practice_start_date" valueDate="2023-10-03"/>
+            <column name="practice_finish_date" valueDate="2023-11-03"/>
+            <column name="is_active" valueBoolean="True"/>
+        </insert>
+        <insert tableName="users">
+            <column name="id" value="550e8400-e29b-41d4-a716-446655440002"/>
+            <column name="login" value="emilyclark"/>
+            <column name="password_hash" value="hashedPassword3"/>
+            <column name="first_name" value="Emily"/>
+            <column name="last_name" value="Clark"/>
+            <column name="patronymic" value="Rose"/>
+            <column name="email" value="emily.clark@example.com"/>
+            <column name="practice_start_date" valueDate="2023-10-04"/>
+            <column name="practice_finish_date" valueDate="2023-11-04"/>
+            <column name="is_active" valueBoolean="True"/>
+        </insert>
+        <insert tableName="users">
+            <column name="id" value="550e8400-e29b-41d4-a716-446655440003"/>
+            <column name="login" value="davidbrown"/>
+            <column name="password_hash" value="hashedPassword4"/>
+            <column name="first_name" value="David"/>
+            <column name="last_name" value="Brown"/>
+            <column name="patronymic" value="William"/>
+            <column name="email" value="david.brown@example.com"/>
+            <column name="practice_start_date" valueDate="2023-10-05"/>
+            <column name="practice_finish_date" valueDate="2023-11-05"/>
+            <column name="is_active" valueBoolean="True"/>
+        </insert>
+        <insert tableName="users">
+            <column name="id" value="550e8400-e29b-41d4-a716-446655440004"/>
+            <column name="login" value="sarahwilson"/>
+            <column name="password_hash" value="hashedPassword5"/>
+            <column name="first_name" value="Sarah"/>
+            <column name="last_name" value="Wilson"/>
+            <column name="patronymic" value="Elizabeth"/>
+            <column name="email" value="sarah.wilson@example.com"/>
+            <column name="practice_start_date" valueDate="2023-10-06"/>
+            <column name="practice_finish_date" valueDate="2023-11-06"/>
+            <column name="is_active" valueBoolean="True"/>
+        </insert>
+
+    </changeSet>
+</databaseChangeLog>
