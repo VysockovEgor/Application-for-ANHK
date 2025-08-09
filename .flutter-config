@@ -1,0 +1,4 @@
+{
+    "enable-impeller": false,
+    "enable-shader-compilation": false
+} 
